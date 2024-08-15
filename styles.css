@@ -9,13 +9,11 @@ body {
     color: white;
     font-size: large;
     text-decoration: none;
-    margin-top: 0;
+    padding: 10px 0; /* Adds padding around the navbar */
+    margin: 0;
     text-align: center;
     line-height: 1.5;
-    list-style-type: none; /* Removes bullet points */
-    display: flex;
-    justify-content: center;
-    
+}
 
 .navbar a {
     color: #ffe082;
@@ -25,18 +23,13 @@ body {
     margin: 0 10px; /* Adds margin between the links */
 }
 
-.navbar ul {
-    list-style-type: none;
-}
-
 /* Welcome Title */
 .welcome-title {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #f57c00;
     margin: 50px auto; /* Adjusts margin to provide spacing around the title */
-    padding: 0px;
     text-align: center;
-    font-size: 60px;
+    font-size: x-large;
 }
 
 /* Centered Image */
