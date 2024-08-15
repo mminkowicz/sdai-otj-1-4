@@ -1,36 +1,130 @@
-.navbar  {
-    color: white; /* This changes the color of the bullet points */
+/* Global Styles */
+body {
+    background-color: #1a1a1a;
+    margin: 0;
+}
+
+/* Navigation Bar */
+.navbar {
+    color: white;
     font-size: large;
     text-decoration: none;
+    padding: 10px 0; /* Adds padding around the navbar */
+    margin: 0;
+    text-align: center;
+    line-height: 1.5;
 }
 
 .navbar a {
-    color: white; /* This changes the color of the bullet points */
+    color: #ffe082;
     font-size: large;
     text-decoration: none;
+    padding: 10px 15px; /* Adds padding inside each link */
+    margin: 0 10px; /* Adds margin between the links */
 }
 
-.centered-title {
-    width: 800px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.welcome-title{
+/* Welcome Title */
+.welcome-title {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #f6b9bf;
-    margin: 50 auto;
+    color: #f57c00;
+    margin: 50px auto; /* Adjusts margin to provide spacing around the title */
     text-align: center;
     font-size: x-large;
 }
 
+/* Centered Image */
 .centered-image {
-   margin: 0 auto;
-   display: block;
+    margin: 20px auto; /* Adds margin around the image */
+    display: block;
 }
 
-body {
-    background-color: #05433d;
-    margin: 0;
-    
+/* About Us Section */
+#aboutus {
+    padding: 40px 20px; /* Adds padding around the entire section */
+    margin-bottom: 40px; /* Adds space below the section */
+}
+
+#aboutus h2 {
+    color: #ffe082;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 20px; /* Space below the heading */
+    padding-bottom: 10px; /* Adds padding below the heading */
+    border-bottom: 2px solid #f57c00; /* Adds a bottom border */
+}
+
+.about-us-paragraph {
+    color: #e0e0e0; /* Light Gray */
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px; /* Adds space below each paragraph */
+    padding: 0px 20px; /* Adds padding on the sides of the paragraph */
+}
+
+/* Menu Title */
+.menu-title {
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+
+/* Menu Item Title */
+.menu-item-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #f57c00;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Menu Description */
+.menu-description {
+    font-style: italic;
+    color: #ffe082;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Item Note */
+.item-note {
+    font-style: italic;
+    color: #f57c00;
+    font-size: 14px;
+    margin-left: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Note at the Bottom of the Menu */
+.note-bottom-menu {
+    color: rgba(204, 22, 22, 0.827);
+    font-style: italic;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 20px; /* Adds space above the note */
+}
+
+/* Hours Section */
+.hours-section {
+    color: #ffe082; /* Soft Cream */
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 40px; /* Adds space below the section */
+    padding: 20px; /* Adds padding around the section */
+}
+
+.hours-section h3 {
+    color: #f57c00; /* Orange for the subheadings */
+    margin-bottom: 15px; /* Adds space below each subheading */
+}
+
+.hours-section ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+}
+
+.hours-section li {
+    margin-bottom: 10px; /* Adds space between each day */
+    color: #e0e0e0; /* Light Gray for the hours text */
+    line-height: 1.5; /* Adjust line height */
 }
