@@ -1,0 +1,36 @@
+.navbar  {
+    color: white; /* This changes the color of the bullet points */
+    font-size: large;
+    text-decoration: none;
+}
+
+.navbar a {
+    color: white; /* This changes the color of the bullet points */
+    font-size: large;
+    text-decoration: none;
+}
+
+.centered-title {
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.welcome-title{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #f6b9bf;
+    margin: 50 auto;
+    text-align: center;
+    font-size: x-large;
+}
+
+.centered-image {
+   margin: 0 auto;
+   display: block;
+}
+
+body {
+    background-color: #05433d;
+    margin: 0;
+    
+}
