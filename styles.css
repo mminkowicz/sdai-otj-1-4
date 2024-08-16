@@ -4,6 +4,14 @@ body {
     margin: 0;
 }
 
+h3 {color: #ffffff;
+}
+
+h2 {color: #ffffff;
+    margin-left: 20px; /* Adds some space on the left */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 /* Navigation Bar */
 .navbar {
     color: white;
@@ -73,6 +81,9 @@ body {
     margin: 0 auto;
     text-align: center;
     color: white;
+    margin-bottom: 20px; /* Space below the heading */
+    padding-bottom: 10px; /* Adds padding below the heading */
+    border-bottom: 2px solid #f57c00; /* Adds a bottom border */
 }
 
 /* Menu Item Title */
@@ -93,6 +104,13 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.menu-type {
+    font-style: italic;
+    color: white;
+    font font-size: 16px;
+    margin-left: 20px; /* Adds some space on the left */
+}
+
 /* Item Note */
 .item-note {
     font-style: italic;
@@ -100,6 +118,11 @@ body {
     font-size: 14px;
     margin-left: 5px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#menu ul {
+    list-style-type: disc; /* Keep the default bullet style */
+    color: #ffe082; /* Soft Cream color for the bullets */
+    margin-left: 20px; /* Adds some space on the left */
 }
 
 /* Note at the Bottom of the Menu */
@@ -109,6 +132,7 @@ body {
     font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-top: 20px; /* Adds space above the note */
+    margin-left: 20px; /* Adds some space on the left */
 }
 
 /* Hours Section */
@@ -117,21 +141,31 @@ body {
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 40px; /* Adds space below the section */
-    padding: 20px; /* Adds padding around the section */
+    padding: 40 20px; /* Adds padding around the section */
+    margin-left: 20px; /* Adds some space on the left */
 }
 
 .hours-section h3 {
     color: #f57c00; /* Orange for the subheadings */
     margin-bottom: 15px; /* Adds space below each subheading */
+    margin-left: 20px; /* Adds some space on the left */
 }
 
 .hours-section ul {
     list-style-type: none; /* Remove bullet points */
     padding: 0;
+    margin-left: 20px; /* Adds some space on the left */
 }
 
 .hours-section li {
     margin-bottom: 10px; /* Adds space between each day */
     color: #e0e0e0; /* Light Gray for the hours text */
     line-height: 1.5; /* Adjust line height */
+    
+}
+
+.paragraph-devfav {
+    color: #ffe082;
+    font-style: italic;
+    margin-left: 20px;;
 }
