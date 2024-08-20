@@ -10,14 +10,25 @@ body {
     box-sizing: border-box;
 }
 
-h3 {
-    color: #ffffff;
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f57c00;
 }
 
 h2 {
     color: #ffffff;
     margin-left: 20px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h3 {
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h4 {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Navigation Bar */
@@ -43,6 +54,8 @@ h2 {
 
 .navbar ul {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 /* Welcome Title */
@@ -55,10 +68,12 @@ h2 {
     font-size: 60px;
 }
 
-/* Centered Image */
 .centered-image {
     margin: 20px auto;
     display: block;
+    width: 30%; /* Smaller percentage for a smaller image */
+    max-width: 200px; /* Smaller maximum width */
+    height: auto;
 }
 
 /* About Us Section */
@@ -206,7 +221,9 @@ h2 {
     justify-content: center;
     gap: 20px;
 }
-.centered-imagea {
+
+/* Centered Image with adjusted class name */
+.centered-image {
     display: block; /* Makes the image a block element */
     margin: 0 auto; /* Centers the image horizontally */
     max-width: 100%; /* Ensures the image scales with the container */
@@ -214,6 +231,8 @@ h2 {
     height: auto; /* Maintains the aspect ratio of the image */
     border-radius: 10px; /* Optional: Rounds the corners of the image */
 }
+
+/* Stretch Horizontal */
 .stretch-horizontal {
     width: 100%; /* Stretch to fill the container's width */
     height: auto; /* Maintain the aspect ratio */
