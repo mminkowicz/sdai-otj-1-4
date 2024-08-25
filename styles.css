@@ -31,29 +31,107 @@ h4 {
 /* Navigation Bar */
 .navbar {
     color: white;
-    font-size: 1.2em; /* Use a specific unit for font size */
+    font-size: 1.2em;
     text-decoration: none;
     margin-top: 0;
     text-align: center;
     line-height: 1.5;
     list-style-type: none;
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Change to center the navbar content */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1000;
+    border-bottom: 2px solid #f57c00;
 }
 
-.navbar a {
-    color: #ffe082;
-    font-size: 1.2em; /* Use a specific unit for font size */
-    text-decoration: none;
-    padding: 10px 15px;
-    margin: 0 10px;
-}
-
-.navbar ul {
+.nav-list {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    justify-content: center; /* Center the list items horizontally */
+    align-items: center; /* Vertically align the list items */
 }
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    color: #ffe082;
+    font-size: 1.2em;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: color 0.3s ease, background-color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.nav-list a:hover {
+    color: #f57c00;
+    background-color: rgba(255, 224, 130, 0.1);
+    border-bottom: 3px solid #f57c00;
+    border-radius: 4px;
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger {
+    width: 25px;
+    height: 3px;
+    background-color: #ffe082;
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #000;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        text-align: center;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .nav-list li {
+        margin: 10px 0;
+    }
+
+    .nav-list a {
+        padding: 10px;
+        font-size: 1.5em;
+    }
+}
+
+.menu-toggle.active .hamburger:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.active .hamburger:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active .hamburger:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
 
 /* Welcome Title */
 .welcome-title {
