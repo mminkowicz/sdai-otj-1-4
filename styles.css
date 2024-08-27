@@ -4,150 +4,80 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden; /* Prevents horizontal scrollbar */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 * {
     box-sizing: border-box;
 }
 
-/* Headings */
-h1, h2, h3, h4 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-left: 20px;
-}
-
 h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #f57c00;
+    text-align: center; /* Centering the main title */
+    margin: 50px auto; /* Adding margin */
 }
 
-h2, h3 {
+h2 {
     color: #ffffff;
+    margin-left: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h3 {
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h4 {
     color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Navigation Bar */
 .navbar {
     color: white;
-    font-size: 1.2em;
+    font-size: large;
     text-decoration: none;
     margin-top: 0;
     text-align: center;
     line-height: 1.5;
     list-style-type: none;
     display: flex;
-    justify-content: center; /* Change to center the navbar content */
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #00000000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: relative;
-    z-index: 1000;
+    justify-content: center;
 }
 
-.nav-list {
+.navbar a {
+    color: #ffe082;
+    font-size: large;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 10px;
+}
+
+.navbar ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    justify-content: center; /* Center the list items horizontally */
-    align-items: center; /* Vertically align the list items */
 }
-
-.nav-list li {
-    margin: 0 15px;
-}
-
-.nav-list a {
-    color: #ffe082;
-    font-size: 1.2em;
-    text-decoration: none;
-    padding: 10px 15px;
-    transition: color 0.3s ease, background-color 0.3s ease, border-bottom 0.3s ease;
-    border-bottom: 3px solid transparent;
-}
-
-.nav-list a:hover {
-    color: #f57c00;
-    background-color: rgba(255, 224, 130, 0.1);
-    border-bottom: 3px solid #f57c00;
-    border-radius: 4px;
-}
-
-/* Hamburger Menu */
-.menu-toggle {
-    display: none;
-    cursor: pointer;
-}
-
-.hamburger {
-    width: 25px;
-    height: 3px;
-    background-color: #ffe082;
-    margin: 5px 0;
-}
-
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-    }
-
-    .nav-list {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: #000;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        text-align: center;
-    }
-
-    .nav-list.active {
-        display: flex;
-    }
-
-    .nav-list li {
-        margin: 10px 0;
-    }
-
-    .nav-list a {
-        padding: 10px;
-        font-size: 1.5em;
-    }
-}
-
-.menu-toggle.active .hamburger:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-}
-
-.menu-toggle.active .hamburger:nth-child(2) {
-    opacity: 0;
-}
-
-.menu-toggle.active .hamburger:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
-}
-
 
 /* Welcome Title */
 .welcome-title {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #f57c00;
     margin: 50px auto;
-    padding: 0;
+    padding: 0px;
     text-align: center;
-    font-size: 3.75em; /* Adjusted to be responsive */
+    font-size: 60px;
 }
 
 .centered-image {
     margin: 20px auto;
     display: block;
-    width: 30%; /* Smaller percentage for a smaller image */
-    max-width: 200px; /* Smaller maximum width */
+    width: 50%; /* Adjusted image size */
+    max-width: 400px; /* Adjusted maximum width */
     height: auto;
+    border-radius: 10px; /* Optional: Rounded corners */
 }
 
 /* About Us Section */
@@ -166,7 +96,7 @@ h4 {
 
 .about-us-paragraph {
     color: #e0e0e0;
-    font-size: 1em; /* Adjusted to be responsive */
+    font-size: 16px;
     line-height: 1.8;
     margin-bottom: 20px;
     padding: 0px 20px;
@@ -187,41 +117,40 @@ h4 {
 /* Menu Item Title */
 .menu-item-title {
     font-weight: bold;
-    font-size: 1.125em; /* Adjusted to be responsive */
-    margin-bottom: 5px;
+    font-size: 18px;
     color: #f57c00;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    display: block;
+    margin-left: 20px; /* Adjust the indentation */
 }
 
 /* Menu Description */
 .menu-description {
     font-style: italic;
     color: #ffe082;
-    font-size: 0.875em; /* Adjusted to be responsive */
-    margin-bottom: 10px;
+    font-size: 14px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 40px; /* This should align with the title */
+    margin-bottom: 10px;
 }
 
+/* List Style for Menu Items */
+ul.menu-list {
+    list-style-type: disc;
+    padding-left: 40px; /* Adjust bullet position relative to content */
+    margin-bottom: 20px;
+}
+
+ul.menu-list li {
+    margin-bottom: 15px; /* Space between items */
+}
+
+/* Menu Type Heading */
 .menu-type {
     font-style: italic;
     color: white;
-    font-size: 1em; /* Adjusted to be responsive */
-    margin-left: 20px;
-}
-
-/* Item Note */
-.item-note {
-    font-style: italic;
-    color: #f57c00;
-    font-size: 0.875em; /* Adjusted to be responsive */
-    margin-left: 5px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-#menu ul {
-    list-style-type: disc;
-    color: #ffe082;
-    margin-left: 20px;
+    font-size: 20px;
+    margin-left: 20px; /* Align with bullets */
 }
 
 /* Note at the Bottom of the Menu */
@@ -237,7 +166,7 @@ h4 {
 /* Hours Section */
 .hours-section {
     color: #ffe082;
-    font-size: 1em; /* Adjusted to be responsive */
+    font-size: 16px;
     line-height: 1.6;
     margin-bottom: 40px;
     padding-left: 20px; /* Adds padding to the left to align with other content */
@@ -259,7 +188,7 @@ h4 {
 
 .hours-section li {
     margin-bottom: 10px;
-    color: #e0e0e0;
+    color: #fff;
     line-height: 1.5;
 }
 
@@ -269,46 +198,31 @@ h4 {
     margin-left: 20px;
 }
 
-/* Footer Section */
-#footer {
+/* Footer */
+.footer {
+    background-color: #333;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0); /* Set a transparent background using rgba */
-    text-align: center; /* Center the text and content */
+    text-align: center;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
-.footer-socialmedia {
+.footer p {
+    margin: 0 0 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
     display: flex;
-    justify-content: center; /* Center the icons horizontally */
-    align-items: center; /* Center the icons vertically */
-    gap: 150px; /* Adjust spacing between icons */
-    flex-wrap: wrap; /* Ensure icons wrap to the next line on smaller screens */
-    margin: 0 auto; /* Center the flex container within its parent */
-    padding: 0;
-    max-width: 100%; /* Ensure the container doesn’t exceed the screen width */
-}
-
-.footer-icon {
-    width: 10vw; /* Responsive icon size based on viewport width */
-    max-width: 50px; /* Limit the maximum size of the icons */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: contain; /* Ensure the icons maintain their aspect ratio */
-    background-color: transparent; /* Ensure no background color on icons */
-    padding: 0;
-    transition: transform 0.3s ease; /* Smooth transition for hover effect */
-}
-
-.footer-icon:hover {
-    transform: scale(1.1); /* Slightly enlarge icons on hover */
-}
-
-/* Centered Image with adjusted class name */
-.centered-image {
-    display: block; /* Makes the image a block element */
-    margin: 0 auto; /* Centers the image horizontally */
-    max-width: 100%; /* Ensures the image scales with the container */
-    width: 50%; /* Adjusts the image size to 50% of its original width */
-    height: auto; /* Maintains the aspect ratio of the image */
-    border-radius: 10px; /* Optional: Rounds the corners of the image */
+    justify-content: center;
+    gap: 20px;
 }
 
 /* Stretch Horizontal */

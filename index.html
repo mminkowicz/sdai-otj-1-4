@@ -7,61 +7,16 @@
     <title>Mendel's First Website</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="path/to/favicon.ico" type="image/x-icon">
-    <style>
-        .gallery {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-
-        .gallery img {
-            max-width: 30%;
-            height: auto;
-            margin: 10px;
-            border-radius: 8px;
-        }
-
-        .footer {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            background-color: #f8f8f8;
-            padding: 20px;
-        }
-
-        .footer ul {
-            display: flex;
-            list-style: none;
-            padding: 0;
-        }
-
-        .footer ul li {
-            margin: 0 10px;
-        }
-
-        .footer ul li a img {
-            width: 30px;
-            height: 30px;
-            display: inline-block;
-        }
-    </style>
 </head>
 
 <body>
     <header>
         <img src="./assets/images/cesar-bretana-gonzalez-a3dhUC7EhYg-unsplash.jpg" alt="coffee shop in NYC" height="50">
-        <nav class="navbar">
-            <div class="menu-toggle" id="mobile-menu">
-                <div class="hamburger"></div>
-                <div class="hamburger"></div>
-                <div class="hamburger"></div>
-            </div>
-            <ul class="nav-list">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#aboutus">About Us</a></li>
+                <li><a href="#dev-favorites">Dev Favorites</a></li>
+                <li><a href="#location-hours">Location & Hours</a></li>
             </ul>
         </nav>
         <h1 class="welcome-title">Dev Dish Food Truck & Restaurant</h1>
@@ -74,60 +29,57 @@
             <p class="about-us-paragraph">Dev Dish brings a unique twist to the food truck scene, offering a menu full of creative, tech-inspired dishes. Whether you're a tech enthusiast or a food lover, our offerings are designed to satisfy both your appetite and your curiosity.</p>
             <p class="about-us-paragraph">Dev Dish is the brainchild of Alex and Jamie, two friends who met at a hackathon and discovered a shared love for innovative cuisine. With a background in software development and a knack for culinary creativity, they embarked on a journey to deliver delicious, tech-themed dishes to the community.</p>
             <img src="./assets/images/cesar-bretana-gonzalez-a3dhUC7EhYg-unsplash.jpg" alt="food truck in NYC" class="centered-image">
+            <img src="./assets/images/additional-image.jpg" alt="An image of delicious tech-themed dish" class="centered-image"> <!-- Additional image as instructed -->
         </section>
 
         <section id="menu">
             <h2 class="menu-title">Menu</h2>
             <article>
                 <h3 class="menu-type">Wraps</h3>
-                <ul>
-                    <li>
-                        <strong class="menu-item-title">Function Fries</strong><br>
-                        <p class="menu-description">Buffalo chicken, romaine lettuce, tomatoes, carrots, ranch, blue cheese</p>
-                    </li>
-                    <li>
-                        <strong class="menu-item-title">Loop Wrap</strong> <span class="item-note">(Vegetarian)</span> <br>
-                        <p class="menu-description">Vegetarian. Hummus, romaine lettuce, sun-dried tomatoes, Kalamata olives, feta cheese, tzatziki sauce</p>
-                    </li>
-                    <li>
-                        <strong class="menu-item-title">Stack Overflow</strong><br>
-                        <p class="menu-description">Jalapeno tortilla, turkey chili, onions, cheddar cheese, avocado</p>
-                    </li>
-                    <li>
-                        <strong class="menu-item-title">Recursive Roll</strong><br>
-                        <p class="menu-description">Smoked salmon, cream cheese, cucumber, dill, and baby spinach</p>
-                    </li>
-                    <li>
-                        <strong class="menu-item-title">Binary Bites</strong><br>
-                        <p class="menu-description">Marinated pork, pickled carrots, cucumber, cilantro, mint, fresno chiles, mayonnaise</p>
-                    </li>
-                    <li>
-                        <strong class="menu-item-title">Git Wrap</strong> <span class="item-note">(Vegetarian)</span> <br>
-                        <p class="menu-description">Falafel, red onion, romaine lettuce, tomato, and tzatziki sauce</p>
-                    </li>
-                </ul>
+                <div>
+                    <h4 class="menu-item-title">Function Fries</h4>
+                    <p class="menu-description">Buffalo chicken, romaine lettuce, tomatoes, carrots, ranch, blue cheese</p>
+                </div>
+                <div>
+                    <h4 class="menu-item-title">Loop Wrap <span class="item-note">(Vegetarian)</span></h4>
+                    <p class="menu-description">Hummus, romaine lettuce, sun-dried tomatoes, Kalamata olives, feta cheese, tzatziki sauce</p>
+                </div>
+                <div>
+                    <h4 class="menu-item-title">Stack Overflow</h4>
+                    <p class="menu-description">Jalapeno tortilla, turkey chili, onions, cheddar cheese, avocado</p>
+                </div>
+                <div>
+                    <h4 class="menu-item-title">Recursive Roll</h4>
+                    <p class="menu-description">Smoked salmon, cream cheese, cucumber, dill, and baby spinach</p>
+                </div>
+                <div>
+                    <h4 class="menu-item-title">Binary Bites</h4>
+                    <p class="menu-description">Marinated pork, pickled carrots, cucumber, cilantro, mint, fresno chiles, mayonnaise</p>
+                </div>
+                <div>
+                    <h4 class="menu-item-title">Git Wrap <span class="item-note">(Vegetarian)</span></h4>
+                    <p class="menu-description">Falafel, red onion, romaine lettuce, tomato, and tzatziki sauce</p>
+                </div>
             </article>
 
             <article>
                 <h3 class="menu-type">Sides</h3>
-                <ul>
-                    <li>
-                        <strong class="menu-item-title">Bug-Free Fries</strong><br>
-                        <p class="menu-description">Just a side of Fries</p>
-                    </li>
-                    <li>
-                        <strong class="menu-item-title">Three-Layer Cheese Fries</strong><br>
-                        <p class="menu-description">Fries topped with havarti and dill cheese, pastrami, Russian dressing, pickled onions and peppers, pickled jalapeno</p>
-                    </li>
-                    <li>
-                        <strong class="menu-item-title">Golden Ratio Fries</strong><br>
-                        <p class="menu-description">Fries topped with havarti and dill cheese, pastrami, Russian dressing, pickled onions and peppers, pickled jalapeno</p>
-                    </li>
-                    <li>
-                        <strong class="menu-item-title">Compile Chips</strong><br>
-                        <p class="menu-description">Tortilla chips and salsa verde</p>
-                    </li>
-                </ul>
+                <div>
+                    <h4 class="menu-item-title">Bug-Free Fries</h4>
+                    <p class="menu-description">Just a side of Fries</p>
+                </div>
+                <div>
+                    <h4 class="menu-item-title">Three-Layer Cheese Fries</h4>
+                    <p class="menu-description">Fries topped with havarti and dill cheese, pastrami, Russian dressing, pickled onions and peppers, pickled jalapeno</p>
+                </div>
+                <div>
+                    <h4 class="menu-item-title">Golden Ratio Fries</h4>
+                    <p class="menu-description">Fries topped with havarti and dill cheese, pastrami, Russian dressing, pickled onions and peppers, pickled jalapeno</p>
+                </div>
+                <div>
+                    <h4 class="menu-item-title">Compile Chips</h4>
+                    <p class="menu-description">Tortilla chips and salsa verde</p>
+                </div>
                 <p class="note-bottom-menu"><em>Note:</em> All wraps, except Stack Overflow, are served on your choice of flour or corn tortilla.</p>
             </article>
         </section>
@@ -135,11 +87,6 @@
         <section id="dev-favorites">
             <h2>The Developer Favorites</h2>
             <p class="paragraph-devfav">Enjoy Dev Dish fan favorite menu items at local events or book us for a visit to your neighborhood or for your special occasion.</p>
-            <div class="gallery">
-                <img src="https://images.pexels.com/photos/104884/pexels-photo-104884.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Food Truck Chef at work">
-                <img src="https://images.pexels.com/photos/5920742/pexels-photo-5920742.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Food Truck Chef giving food to a happy customer">
-                <img src="https://images.pexels.com/photos/5920744/pexels-photo-5920744.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Food Truck customers enjoying meal">    
-</div>
         </section>
 
         <section id="location-hours" class="hours-section">
@@ -165,18 +112,19 @@
 
     <footer class="footer">
         <p>Connect with us:</p>
-        <section id="footer">
-            <div class="footer-socialmedia">
-                <img class="footer-icon" src="https://static.vecteezy.com/system/resources/previews/018/930/476/non_2x/facebook-logo-facebook-icon-transparent-free-png.png" alt="Facebook icon">
-                <img class="footer-icon" src="https://www.iconpacks.net/icons/2/free-twitter-logo-icon-2429-thumb.png" alt="Twitter X icon">
-                <img class="footer-icon" src="https://thumbs.dreamstime.com/b/print-204010528.jpg" alt="Instagram icon">
-                <img class="footer-icon" src="https://cdn4.iconfinder.com/data/icons/social-media-flat-7/64/Social-media_Tiktok-512.png" alt="TikTok icon">
-            </div>
-        </section>
-        
-        <p>&copy; 2024 Dev Dish Food Truck & Restaurant. All rights reserved.</p>
+        <ul>
+            <li><a href="https://www.facebook.com" target="_blank">
+                <img src="https://static.xx.fbcdn.net/rsrc.php/yT/r/aGT3gskzWBf.ico" alt="Facebook" width="30" height="30">
+            </a></li>
+            <li><a href="https://www.twitter.com" target="_blank">
+                <img src="https://abs.twimg.com/responsive-web/client-web/icon-ios.77d25eba.png" alt="Twitter" width="30" height="30">
+            </a></li>
+            <li><a href="https://www.instagram.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="30" height="30">
+            </a></li>
+        </ul>
     </footer>
-    <script src="script.js"></script>
 </body>
+<script src="myscripts.js"></script>
 
 </html>
