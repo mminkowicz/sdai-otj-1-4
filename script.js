@@ -36,3 +36,4 @@ menuToggle.addEventListener('click', function() {
     menuToggle.classList.toggle('active');
     navList.classList.toggle('active');
 });
+

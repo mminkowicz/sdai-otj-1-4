@@ -231,3 +231,40 @@ ul.menu-list li {
     height: auto; /* Maintain the aspect ratio */
     object-fit: fill; /* Fill the container, even if it distorts the image */
 }
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    max-width: 30%;
+    height: auto;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+
+.footer ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin: 0 10px;
+}
+
+.footer ul li a img {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
